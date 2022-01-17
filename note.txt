@@ -1,0 +1,47 @@
+
+// React Native built in component and API's:
+
+// Basic component
+    View, Text,Image, TextInput, ScrollView, StyleSheet
+
+// UI component
+    Button, Picker, Slider, Switch
+
+// List View
+    FlatList, SectionList
+
+// iOS component
+    ActionSheetIOS, AlertIOS
+
+// Android component
+    BackHandler, DatePickerAndroid
+
+// Inline styling
+    <Text style={{backgroundColor:'#333',color:'#fff',fontSize:18}}>Hello World!</Text>
+
+// Use image from URL
+     <Image style={Appstyles.image} source={{uri:"https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlld3xlbnwwfHwwfHw%3D&w=1000&q=80"}} />
+        
+        // using assets image
+     <Image style={Appstyles.image} source={require('./assets/reactImage.jpeg')} />
+
+// Style
+`   const Appstyles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  text: {
+    backgroundColor: "cyan",
+    color: "#fff",
+    fontSize: 20,
+  },
+  image:{
+    height:100,
+    width:100,
+    // justifyContent:'center',
+    // alignContent:"center"
+  }
+});
