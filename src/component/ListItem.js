@@ -1,15 +1,14 @@
 import React from "react";
 import { View, Text, StyleSheet, Touchable } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
-import { Icon } from 'react-native-elements';
+import { Icon } from "react-native-elements";
 
-const ListItem = ({ item }) => {
+const ListItem = ({ item, removeEmployee }) => {
   return (
     <TouchableOpacity style={ShopList.listItem}>
       <View style={ShopList.listItemView}>
         <Text style={ShopList.listItemText}>{item.text}</Text>
-        <Icon
-          name='delete' />
+        <Icon color='red' name="delete" onPress={()=>removeEmployee(item.id)} />
       </View>
     </TouchableOpacity>
   );
